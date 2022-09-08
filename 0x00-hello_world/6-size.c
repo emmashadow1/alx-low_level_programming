@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 
+
 /**
  *
- *  * main - prints the sizes
+ *  * main - prints the size of various types
  *
- *   * Return: 0 
+ *   * Return: 0
  *
  *    */
 
