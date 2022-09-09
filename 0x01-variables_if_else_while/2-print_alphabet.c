@@ -3,26 +3,26 @@
 /**
 * main - prints the alphabet in lowercase,
 * followed by a new line
-* Return: 0
+* Return: Always 0 (Success)
 */
 int main(void)
 
 {
 
-		char uh;
+	char ot;
 
 
 
-			for (uh = 'a'; ch <= 'z'; uh++)
+	for (ot = 'a'; ot <= 'z'; ot++)
 
-					{
+	{
 
-								putchar(uh);
+		putchar(ot);
 
-									}
+	}
 
-				putchar('\n');
+	putchar('\n');
 
-					return (0);
+	return (0);
 
 }
