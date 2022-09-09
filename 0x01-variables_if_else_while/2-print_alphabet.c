@@ -2,22 +2,22 @@
 
 /**
 * main - prints the alphabet in lowercase,
-* followed by a new line
+*
 * Return: 0
 */
 int main(void)
 
 {
 
-		char ch;
+		char uh;
 
 
 
-			for (ch = 'a'; ch <= 'z'; ch++)
+			for (uh = 'a'; ch <= 'z'; uh++)
 
 					{
 
-								putchar(ch);
+								putchar(uh);
 
 									}
 
