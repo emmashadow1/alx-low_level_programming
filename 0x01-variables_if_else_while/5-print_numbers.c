@@ -1,23 +1,43 @@
 #include <stdio.h>
 
 /**
-* main - prints all single digit numbers of base
-* 10 starting from 0, followed by a new line
-* Return: 0
-*/
+
+ * main - print if the number is postive, zero, or negative
+
+ *
+
+ * Description: using the main function
+
+ * this program prints "Programming is positive, zero, or negative
+
+ * Return: 0
+
+ */
+
 int main(void)
 
 {
 
-	int n;
+char ch;
 
+for (ch = 'a' ; ch <= 'z' ; ch++)
 
+{
 
-	for (n = 0; n < 10; n++)
+	putchar(ch);
 
-		printf("%d", n);
+}
 
-	printf("\n");
+for (ch = 'A' ; ch <= 'Z' ; ch++)
 
-	return (0);
+{
 
+	putchar(ch);
+
+}
+
+putchar('\n');
+
+return (0);
+
+}
