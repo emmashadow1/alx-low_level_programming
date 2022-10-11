@@ -1,11 +1,12 @@
+#include <stdlib.h>
 #include <stdio.h>
-/**
- * main - Program compilation starts from the main
- * Description: this program prints the name of the file it was compiled from
- * Return: 0 (success)
+/** 
+ *main - prints name of file.
+ *
+ *Return: 0.
  */
 int main(void)
 {
-	printf("%s\n", _FILE_);
+	printf("%s\n", __FILE__);
 	return (0);
 }
