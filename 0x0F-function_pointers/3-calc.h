@@ -1,32 +1,27 @@
+#ifndef CALC_H
+#define CALC_H
+
 #include <stdio.h>
-#include "3-calc.h"
+#include <stdlib.h>
+#include <string.h>
+
 /**
- *op_add - return difference of 2 numbers.
- * @a: integer.
+ * struct op - Struct op
  *
- * Return: sum.
- * operator given as a parameter
+ * @op: The operator
+ * @f: The function associated
  */
-int (*get_op_func(char *s))(int, int)
+typedef struct op
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i;
+	char *op;
+	int (*f)(int a, int b);
+} op_t;
 
-	i = 0;
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
+int (*get_op_func(char *s))(int, int);
 
-	while (ops[i].op)
-	{
-		if (strcmp(ops[i].op, s) == 0)
-			return (ops[i].f);
-		i++;
-	}
-
-	return (NULL);
-}
+#endif
